@@ -1,0 +1,197 @@
+  /* Reset some default styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    /* background-color: #f4f4f4; */
+    /* background: linear-gradient(#9c9cdb ,#74c695); */
+    /* background: #4a91a2; */
+    color: #fff;
+     width: 100%;
+    height: 100%;
+  }
+
+  /* Header styles */
+  header {
+    /* background-color: #000;
+     */
+    /* background-color: #a15757;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(225, 225, 225, .1);
+    color: #68d4be;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(225, 225, 225, 225.2);
+
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5a5f;
+    letter-spacing: 2px;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  nav a {
+    color: #5bc1c4;
+    text-decoration: none;
+    font-size: 800;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #ff5a5f;
+  }
+
+  /* Study Material Section */
+  .study-section {
+     width: 100%;
+    height: 900px;
+
+    padding: 40px 20px;
+    margin: 0 auto;
+    /* background-image: url('https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_23-2149008629.jpg?semt=ais_hybrid&w=740&q=80'); */
+
+    background-image: url("https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg");
+    /* background-image:url(""); */
+
+     background-size: cover; 
+     background-position: center;
+  }
+
+  .section-title {
+ 
+    text-align: center;
+    margin-bottom: 159px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #70a2b8;
+    padding-top: 40px;
+  }
+
+  /* Cards container */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    justify-content: center;
+  }
+
+  /* Card styles */
+  .card {
+    background-color: #fff;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Card icon */
+  .card-icon {
+    font-size: 40px;
+    color: #ff5a5f;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  /* Card title */
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  /* Card description */
+  .card-desc {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Download button */
+  .download-btn {
+    background-color: #ff5a5f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0 auto 20px auto;
+    display: block;
+    transition: background-color 0.3s;
+  }
+
+  .download-btn:hover {
+    background-color: #e14b50;
+  }
+
+  /* Chat history button */
+  .chat-history-btn {
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    background-color: #ff5a5f;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 10;
+  }
+
+  .chat-history-btn:hover {
+    background-color: #e14b50;
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  /* Icon inside chat button */
+  .chat-icon {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  /* Responsive adjustments */
+  @media(max-width: 1000px) {
+    .cards-container {
+      justify-content: center;
+    }
+  }
