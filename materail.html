@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Study Material Page</title>
+
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link rel="stylesheet" href="css/materail_style.css">
+</head>
+<body>
+
+<!-- Header with navigation -->
+<header>
+  <div class="logo">Educhat</div>
+  <nav>
+    <a class="Home" href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Testimonials</a>
+    <!-- <a href="#">Dropdown</a> -->
+    <a href="#">Contact Us</a>
+  </nav>
+</header>
+
+<!-- Study Material Section -->
+<div class="study-section">
+  <div class="section-title">Study Material</div>
+  <div class="cards-container">
+    <!-- Card 1: Programming Language -->
+    <div class="card">
+      
+      <div class="card-icon">
+        <i class="fab fa-python"></i>
+      </div>
+      <div class="card-title">Python Programming</div>
+      <div class="card-desc">
+        Learn the basics of Python, a versatile and beginner-friendly programming language.
+      </div>
+      <button onclick="downloadPDF()" class="download-btn" onclick="downloadMaterial('Python')">Download</button>
+    </div>
+    <!-- Card 2: JavaScript -->
+    <div class="card">
+      
+      <div class="card-icon">
+        <i class="fab fa-js-square"></i>
+      </div>
+      <div class="card-title">JavaScript</div>
+      <div class="card-desc">
+        Master client-side scripting with JavaScript to make interactive websites.
+      </div>
+      <button onclick="downloadPDF()" class="download-btn" onclick="downloadMaterial('JavaScript')">Download</button>
+    </div>
+    <!-- Card 3: C++ -->
+    <div class="card">
+   
+      <div class="card-icon">
+        <i class="fas fa-code"></i>
+      </div>
+      <div class="card-title">C++</div>
+      <div class="card-desc">
+        Dive into C++ for system/software development and high-performance applications.
+      </div>
+      <button onclick="downloadPDF()" class="download-btn" onclick="downloadMaterial('C++')">Download</button>
+    </div>
+  </div>
+</div>
+<script>
+const HOME = document.querySelector(".Home"); // Study is 4th link
+// OR use an id for more reliability: <a id="study-link">Study</a>
+
+// Add click event to open the Study page
+HOME.addEventListener('click', (e) => {
+    e.preventDefault(); // prevent default link action if needed
+    window.location.href = 'dashboad.html'; // path to your Study page
+});
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
